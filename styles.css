@@ -69,10 +69,10 @@ a:hover {
 
 .section_type_intro .logo {
     color: #ffffff;
-    flex: 0 !important;
     text-align: center;
     font-weight: bold;
     font-size: 34px;
+    flex: 0 !important;
 }
 
 .section_type_intro .phone-number {
@@ -116,18 +116,27 @@ a:hover {
 }
 
 .section_type_intro .details {
+    display: inline-block;
     color: #999999;
     font-size: 18px;
-    display: inline-block;
 }
 
 .section_type_intro .details:after {
-    content: '';
-    background: url("i/icon_type_arrow.png") 0 0 no-repeat;
-    width: 24px;
-    height: 37px;
     display: block;
     margin: 15px auto;
+    width: 24px;
+    height: 37px;
+    background: url("i/icon_type_arrow.png") 0 0 no-repeat;
+    content: '';
+
+}
+
+.section_type_intro .details:hover:after {
+    animation-name: details;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
 }
 
 .section_type_investment {
@@ -174,8 +183,8 @@ a:hover {
 }
 
 .section_type_owners .table {
-    margin: 0 150px;
     display: flex;
+    margin: 0 150px;
     justify-content: space-between;
 }
 
@@ -449,19 +458,20 @@ a:hover {
     font-size: 14px;
 }
 
-.form {}
+.form {
+}
 
 .form__caption {
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
     margin: 0 0 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
 }
 
 .form__caption span {
     display: block;
-    font-size: 14px;
     font-weight: normal;
+    font-size: 14px;
 }
 
 .form__submit {
@@ -469,27 +479,27 @@ a:hover {
 }
 
 .form__submit .pseudo-btn {
+    border: 0;
     background: #308ce9;
     background: linear-gradient(to bottom, #308ce9 0%, #2462a0 100%);
-    border: 0;
 }
 
 .input {
-    background: #ffffff;
+    margin: 0 0 20px;
+    padding: 20px 35px;
     border: 1px solid #cccccc;
     border-radius: 30px;
-    padding: 20px 35px;
-    margin: 0 0 20px;
+    background: #ffffff;
 }
 
 .input__control {
-    font-size: 18px;
-    line-height: 1;
-    border: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
     width: 100%;
     outline: none;
+    border: 0;
+    font-size: 18px;
+    line-height: 1;
 }
 
 .input__control:focus {
@@ -503,4 +513,75 @@ a:hover {
 
 .radio__control {
 
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: auto;
+    transition: all .5s ease-out;
+}
+
+.popup_visible {
+    opacity: 1;
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__paranja {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #000;
+    opacity: .5;
+}
+
+.popup__window {
+    position: relative;
+    z-index: 1;
+    padding: 35px 40px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.popup__close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+@keyframes details {
+    0%, 50%, 100% {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    25% {
+        margin-bottom: 5px;
+        margin-top: 25px;
+    }
+    75% {
+        margin-bottom: 25px;
+        margin-top: 5px;
+    }
 }

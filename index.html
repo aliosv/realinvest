@@ -12,8 +12,8 @@
             <div class="section__inner">
                 <div class="head">
                     <div class="links">
-                        <a href="#">Для инвесторов</a>
-                        <a href="#">Для собственников объектов</a>
+                        <a href="#invest" class="scrollTo">Для инвесторов</a>
+                        <a href="#owners" class="scrollTo">Для собственников объектов</a>
                     </div>
                     <div class="logo">REALINVEST</div>
                     <div class="phone-number">
@@ -26,25 +26,26 @@
 
                     <div class="buttons">
                         <div>
-                            <span class="pseudo-btn">Стать инвестором</span>
+                            <span class="pseudo-btn popup-opener" data-popup="popup_1">Стать инвестором</span>
 
                             <div>Все объекты проверенына юридическую чистоту сделки</div>
                         </div>
                         <div>
-                            <span class="pseudo-btn pseudo-btn_transparent">Опубликовать ОБЪЕКТ</span>
+                            <span class="pseudo-btn pseudo-btn_transparent scrollTo" href="#owners">Опубликовать
+                                ОБЪЕКТ</span>
 
                             <div>Получите наличные в течение 5 дней</div>
                         </div>
                     </div>
                 </div>
                 <div class="footer">
-                    <a class="details" href="#">Подробнее</a>
+                    <a class="details scrollTo" href="#invest">Подробнее</a>
                 </div>
             </div>
         </div>
         <div class="section section_type_investment">
             <div class="section__inner">
-                <h2 class="section__header">Инвестирование в недвижимость</h2>
+                <h2 class="section__header" id="invest">Инвестирование в недвижимость</h2>
 
                 <div class="discount-chart">
                     <div class="discount-chart__legend"><span>Рыночная стоимость объекта</span></div>
@@ -72,13 +73,13 @@
                     </div>
                 </div>
                 <div class="action">
-                    <span class="pseudo-btn">Стать инвестором</span>
+                    <span class="pseudo-btn popup-opener" data-popup="popup_1">Стать инвестором</span>
 
                     <div>Объекты от 3 000 000 ₽</div>
                 </div>
             </div>
         </div>
-        <div class="section section_type_owners">
+        <div class="section section_type_owners" id="owners">
             <div class="section__inner">
                 <h2 class="section__header">Для владельцев объектов</h2>
 
@@ -102,7 +103,7 @@
                         </div>
                     </div>
                     <div class="form">
-                        <form action="#" onsubmit="alert('Форма отправлена'); return false;">
+                        <form action="#" onsubmit="alert('Заявка отправлена'); return false;">
                             <div class="form__caption">Отправьте
                                 заявку<span>Для оценка объекта и поиска инвестора</span></div>
                             <div class="input"><input type="text" name="name" class="input__control"
@@ -161,13 +162,14 @@
                 <h2 class="section__header">Остались вопросы?</h2>
 
                 <div class="contacts">
-                    <span class="pseudo-btn">ОСТАВИТЬ ЗАЯВКУ</span>
+                    <span class="pseudo-btn scrollTo" href="#owners">ОСТАВИТЬ ЗАЯВКУ</span>
 
                     <div class="phone-number">
                         <span class="phone-number__value">+7 495 999-88-77</span>
                         <span class="phone-number__schedule">По рабочим дням с 10 до 9 вечера</span>
                     </div>
-                    <span class="pseudo-btn pseudo-btn_transparent">ПЕРЕЗВОНИТЕ МНЕ</span>
+                    <span class="pseudo-btn pseudo-btn_transparent popup-opener" data-popup="popup_2">ПЕРЕЗВОНИТЕ
+                        МНЕ</span>
                 </div>
                 <div class="legal">
                     <span class="legal__item">2016 – Все права защищены</span>
@@ -176,5 +178,84 @@
             </div>
         </div>
     </div>
+
+    <div class="popup" id="popup_1">
+        <div class="popup__paranja"></div>
+        <div class="popup__window">
+            <div class="popup__close">X</div>
+            <div class="form">
+                <form action="#" onsubmit="alert('Заявка отправлена');
+                $(this).parents('.popup').removeClass('popup_visible'); return false;">
+                    <div class="form__caption">Оставьте
+                        заявку<span>и мы подберем Вам объект для инвестирования</span></div>
+                    <div class="input"><input type="text" name="name" class="input__control"
+                                              placeholder="Ваше имя" required/></div>
+                    <div class="input"><input type="text" name="invest_num" class="input__control"
+                                              placeholder="Предполагаемая сумма инвестирования" required/></div>
+                    <div class="input"><input type="text" name="email" class="input__control"
+                                              placeholder="E-mail адрес" required/></div>
+                    <div class="input"><input type="text" name="phone" class="input__control"
+                                              placeholder="Контактный телефон" required/></div>
+                    <div class="form__submit">
+                        <button class="pseudo-btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup_2">
+        <div class="popup__paranja"></div>
+        <div class="popup__window">
+            <div class="popup__close">X</div>
+            <div class="form">
+                <form action="#" onsubmit="alert('Заявка отправлена');
+                $(this).parents('.popup').removeClass('popup_visible'); return false;">
+                    <div class="form__caption">Оставьте
+                        заявку<span>и мы Вам перезвоним</span></div>
+                    <div class="input"><input type="text" name="name" class="input__control"
+                                              placeholder="Ваше имя" required/></div>
+                    <div class="input"><input type="text" name="phone" class="input__control"
+                                              placeholder="Контактный телефон" required/></div>
+                    <div class="form__submit">
+                        <button class="pseudo-btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://yastatic.net/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.scrollTo').each(function() {
+                var $this = $(this),
+                    targetIdSelector = $this.attr('href');
+
+                targetIdSelector && $this.click(function(e) {
+                    $(document.body).stop().animate({ scrollTop : $(targetIdSelector).offset().top }, 300);
+                });
+            });
+
+            $('.popup-opener').click(function() {
+                var $this = $(this),
+                    popupId = $this.data('popup');
+
+                if(popupId) {
+                    popupId = '#' + popupId;
+                    $(popupId).addClass('popup_visible');
+                    $(popupId + ' input:eq(0)').focus();
+                }
+            });
+
+            $('.popup__close').click(function() {
+                $(this).parents('.popup').removeClass('popup_visible');
+            });
+
+            $(document).keyup(function(e) {
+                if(e.which === 27) $('.popup').removeClass('popup_visible');
+            });
+        });
+    </script>
 </body>
 </html>
