@@ -111,6 +111,10 @@ a:hover {
     justify-content: center;
 }
 
+.section_type_intro .body .buttons div + div {
+    margin-left: 20px;
+}
+
 .section_type_intro .footer {
     text-align: center;
 }
