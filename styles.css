@@ -45,14 +45,14 @@ a:hover {
 .section_type_intro .section__inner {
     display: flex;
     flex-direction: column;
-    padding: 0 0 40px;
-    height: 728px;
+    padding: 0 0 20px;
+    height: 748px;
     justify-content: space-between;
 }
 
 .section_type_intro .head {
     display: flex;
-    margin: 0 3%;
+    margin: 35px 3% 0;
     justify-content: space-between;
     align-items: center;
 }
