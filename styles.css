@@ -148,6 +148,10 @@ a:hover {
     background-color: #fff;
 }
 
+.section_type_investment .section__inner {
+    margin-top: 68px;
+}
+
 .section_type_investment .section__header {
     margin-bottom: 32px;
     color: #333333;
@@ -158,9 +162,15 @@ a:hover {
 }
 
 .section_type_investment .icon-list {
-    margin-right: 19%;
+    margin-right: 15%;
     margin-bottom: 78px;
-    margin-left: 19%;
+    margin-left: 15%;
+}
+
+.section_type_investment .icon-list__item {
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 31%;
 }
 
 .section_type_investment .icon-list .icon-list__icon {
@@ -185,6 +195,14 @@ a:hover {
 
 .section_type_owners {
     background-color: #fafafa;
+}
+
+.section_type_owners .section__inner {
+    padding-top: 53px;
+}
+
+.section_type_owners .section__header {
+    margin-bottom: 42px;
 }
 
 .section_type_owners .table {
@@ -213,14 +231,18 @@ a:hover {
     background-color: #fff;
 }
 
+.section_type_how-it-works .section__inner {
+    padding-top: 69px;
+}
+
 .section_type_how-it-works .section__header {
     color: #333333;
 }
 
 .section_type_how-it-works .icon-list {
     box-sizing: border-box;
-    margin-right: 8%;
-    margin-left: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .section_type_how-it-works .icon-list__item {
