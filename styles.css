@@ -216,8 +216,8 @@ a:hover {
 }
 
 .section_type_owners .icon-list {
-    width: 47%;
     margin-right: 2%;
+    width: 47%;
 }
 
 .section_type_owners .icon-list__text {
@@ -225,8 +225,8 @@ a:hover {
 }
 
 .section_type_owners .form {
-    max-width: 400px;
     min-width: 300px;
+    max-width: 400px;
     flex: 1;
 }
 
@@ -566,7 +566,10 @@ a:hover {
     height: 30px;
     border: 1px solid #cdcdcd;
     border-radius: 100%;
-    background: #ffffff;
+    background-color: #ffffff;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
     color: #fff;
     content: '';
     vertical-align: top;
@@ -576,8 +579,8 @@ a:hover {
 
 .radio__control:checked + .radio__label:before {
     border-color: #464646;
-    background: #464646;
-    content: '✔';
+    background-color: #464646;
+    background-image: url('i/radio_checked.svg')/*, linear-gradient(to bottom, #333333 0%, #666666 100%)*/;
 }
 
 .radio + .radio {
@@ -638,14 +641,14 @@ a:hover {
 }
 
 .popup__close {
+    background: url("i/popup__close.svg") 50% 50% no-repeat;
+    background-size: 15px;
     position: absolute;
-    top: -40px;
-    right: -40px;
+    top: -39px;
+    right: -29px;
+    width: 15px;
+    height: 15px;
     padding: 10px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1;
     cursor: pointer;
 }
 
