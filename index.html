@@ -10,17 +10,51 @@
     <div class="sections">
         <div class="section section_type_intro">
             <div class="section__inner">
+                <div class="head">
+                    <div class="links">
+                        <a href="#">Для инвесторов</a>
+                        <a href="#">Для собственников объектов</a>
+                    </div>
+                    <div class="logo">REALINVEST</div>
+                    <div class="phone-number">
+                        <div class="phone-number__hint">Позвоните нам для консультации</div>
+                        <div class="phone-number__value">+7 495 999-88-77</div>
+                    </div>
+                </div>
+                <div class="body">
+                    <h2>Инвестиции в недвижимость<span>надежный актив и источник дохода</span></h2>
 
+                    <div class="buttons">
+                        <div>
+                            <span class="pseudo-btn">Стать инвестором</span>
+
+                            <div>Все объекты проверенына юридическую чистоту сделки</div>
+                        </div>
+                        <div>
+                            <span class="pseudo-btn pseudo-btn_transparent">Опубликовать ОБЪЕКТ</span>
+
+                            <div>Получите наличные в течение 5 дней</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a class="details" href="#">Подробнее</a>
+                </div>
             </div>
         </div>
         <div class="section section_type_investment">
             <div class="section__inner">
                 <h2 class="section__header">Инвестирование в недвижимость</h2>
+
                 <div class="discount-chart">
                     <div class="discount-chart__legend"><span>Рыночная стоимость объекта</span></div>
                     <div class="discount-chart__chart">
-                        <div class="discount-chart__discount"><div class="discount-chart__value">Дисконт до 30%<span>от стоимости объекта</span></div></div>
-                        <div class="discount-chart__cost"><div class="discount-chart__value">Вы получаете объект за 70% стоимости</div></div>
+                        <div class="discount-chart__discount">
+                            <div class="discount-chart__value">Дисконт до 30%<span>от стоимости объекта</span></div>
+                        </div>
+                        <div class="discount-chart__cost">
+                            <div class="discount-chart__value">Вы получаете объект за 70% стоимости</div>
+                        </div>
                     </div>
                 </div>
                 <div class="icon-list icon-list_horizontal">
@@ -39,6 +73,7 @@
                 </div>
                 <div class="action">
                     <span class="pseudo-btn">Стать инвестором</span>
+
                     <div>Объекты от 3 000 000 ₽</div>
                 </div>
             </div>
@@ -47,18 +82,48 @@
             <div class="section__inner">
                 <h2 class="section__header">Для владельцев объектов</h2>
 
-                <div class="icon-list icon-list_vertical">
-                    <div class="icon-list__item">
-                        <div class="icon-list__icon icon icon_type_clock"></div>
-                        <div class="icon-list__text">Оперативная оценка<br>и проверка объекта</div>
+                <div class="table">
+                    <div class="icon-list icon-list_vertical">
+                        <div class="icon-list__item">
+                            <div class="icon-list__icon icon icon_type_clock"></div>
+                            <div class="icon-list__text">Оперативная оценка<br>и проверка объекта</div>
+                        </div>
+                        <div class="icon-list__item">
+                            <div class="icon-list__icon icon icon_type_house"></div>
+                            <div class="icon-list__text">Получение наличных или<br>безналичных денежных средств<br>за
+                                объект уже через 3 дня*
+                            </div>
+                        </div>
+                        <div class="icon-list__item">
+                            <div class="icon-list__icon icon icon_type_document"></div>
+                            <div class="icon-list__text">Государственная регистрация<br>и юридическое сопровождение
+                                сделки
+                            </div>
+                        </div>
                     </div>
-                    <div class="icon-list__item">
-                        <div class="icon-list__icon icon icon_type_house"></div>
-                        <div class="icon-list__text">Получение наличных или<br>безналичных денежных средств<br>за объект уже через 3 дня*</div>
-                    </div>
-                    <div class="icon-list__item">
-                        <div class="icon-list__icon icon icon_type_document"></div>
-                        <div class="icon-list__text">Государственная регистрация<br>и юридическое сопровождение сделки</div>
+                    <div class="form">
+                        <form action="#" onsubmit="alert('Форма отправлена'); return false;">
+                            <div class="form__caption">Отправьте
+                                заявку<span>Для оценка объекта и поиска инвестора</span></div>
+                            <div class="input"><input type="text" name="name" class="input__control"
+                                                      placeholder="Ваше имя" required/></div>
+                            <div class="radio-group">
+                                <label class="radio"><input class="radio__control" type="radio"
+                                                            name="business-entity" required/>Юридическое
+                                    лицо</label>
+                                <label class="radio"><input class="radio__control" type="radio" name="business-entity"/>Физическое
+                                    лицо</label>
+                            </div>
+                            <div class="input"><input type="text" name="company" class="input__control"
+                                                      placeholder="Название компании" required/></div>
+                            <div class="input"><input type="text" name="post" class="input__control"
+                                                      placeholder="Должность" required/></div>
+                            <div class="input"><input type="text" name="phone" class="input__control"
+                                                      placeholder="Контактный телефон" required/></div>
+                            <div class="form__submit">
+                                <button class="pseudo-btn">Отправить</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -66,6 +131,7 @@
         <div class="section section_type_how-it-works">
             <div class="section__inner">
                 <h2 class="section__header">Как это работает</h2>
+
                 <div class="icon-list icon-list_horizontal">
                     <div class="icon-list__item">
                         <div class="icon-list__icon icon icon_type_circle">1</div>
@@ -93,8 +159,10 @@
         <div class="section section_type_contacts">
             <div class="section__inner">
                 <h2 class="section__header">Остались вопросы?</h2>
+
                 <div class="contacts">
                     <span class="pseudo-btn">ОСТАВИТЬ ЗАЯВКУ</span>
+
                     <div class="phone-number">
                         <span class="phone-number__value">+7 495 999-88-77</span>
                         <span class="phone-number__schedule">По рабочим дням с 10 до 9 вечера</span>
