@@ -52,7 +52,7 @@ a:hover {
 
 .section_type_intro .head {
     display: flex;
-    margin: 35px 3% 0;
+    margin: 30px 3% 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -100,6 +100,7 @@ a:hover {
 
 .section_type_intro .body h2 span {
     display: block;
+    margin-top: -13px;
     font-weight: normal;
     font-size: 28px;
 }
@@ -472,7 +473,7 @@ a:hover {
 }
 
 .form__caption {
-    margin: 0 0 10px;
+    margin: 0 0 25px;
     text-align: center;
     font-weight: bold;
     font-size: 26px;
@@ -500,8 +501,10 @@ a:hover {
 
 .input__control {
     display: block;
+    box-sizing: border-box;
     margin: 0;
     padding: 20px 35px;
+    width: 100%;
     outline: none;
     border: 1px solid #cccccc;
     border-radius: 30px;
@@ -614,6 +617,10 @@ a:hover {
     font-size: 20px;
     line-height: 1;
     cursor: pointer;
+}
+
+.popup .form {
+    width: 400px;
 }
 
 @keyframes details {
