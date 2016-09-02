@@ -1,0 +1,349 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 1366px;
+}
+
+.sections {
+}
+
+.section {
+
+}
+
+.section__inner {
+    margin: auto;
+    padding: 73px 0 83px;
+    max-width: 1366px;
+}
+
+.section__header {
+    margin: 0 0 68px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.section_type_intro {
+    height: 768px;
+    background: #000 url("i/section_type_intro.png") 50% 0 no-repeat;
+}
+
+.section_type_investment {
+    background-color: #fff;
+}
+
+.section_type_investment .section__header {
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.section_type_investment .discount-chart {
+    margin: 0 151px 66px;
+}
+
+.section_type_investment .icon-list {
+    margin-right: 19%;
+    margin-left: 19%;
+    margin-bottom: 78px;
+}
+
+.section_type_investment .icon-list .icon-list__icon {
+    margin-bottom: 17px;
+}
+
+.section_type_investment .icon-list__text {
+    font-weight: bold;
+}
+
+.section_type_investment .action {
+    color: #999999;
+    text-align: center;
+    font-size: 16px;
+}
+
+.section_type_investment .action .pseudo-btn {
+    margin-bottom: 18px;
+    border: 0;
+    background: linear-gradient(to bottom, #24b987 0%, #1a8f68 100%);
+}
+
+.section_type_owners {
+    background-color: #fafafa;
+}
+
+.section_type_owners .section__inner {
+    box-sizing: content-box;
+    max-width: 1066px;
+}
+
+.section_type_owners .icon-list {
+    width: 48%;
+}
+
+.section_type_owners .icon-list__text {
+    font-weight: bold;
+}
+
+.section_type_owners .section__header {
+    color: #000;
+}
+
+.section_type_how-it-works {
+    background-color: #fff;
+}
+
+.section_type_how-it-works .section__header {
+    color: #333333;
+}
+
+.section_type_how-it-works .icon-list {
+    box-sizing: border-box;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.section_type_how-it-works .icon-list__item {
+    width: 20%;
+}
+
+.section_type_how-it-works .icon-list__item {
+    color: #333333;
+}
+
+.section_type_contacts {
+    background-color: #28282c;
+}
+
+.section_type_contacts .section__inner {
+    padding: 56px 0 24px;
+}
+
+.section_type_contacts .section__header {
+    color: #ffffff;
+    margin-bottom: 36px;
+}
+
+.section_type_contacts .contacts {
+    display: flex;
+    margin: 0 21% 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_type_contacts .legal {
+    display: flex;
+    margin: 0 3%;
+    color: #666666;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.discount-chart {
+}
+
+.discount-chart__legend {
+    margin: 0 0 30px;
+    position: relative;
+    overflow: hidden;
+    color: #cccccc;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.discount-chart__legend span {
+    position: relative;
+    z-index: 1;
+    padding: 0 30px;
+    background: #fff;
+}
+
+.discount-chart__legend:before,
+.discount-chart__legend:after {
+    position: absolute;
+    bottom: -15px;
+    width: 50%;
+    height: 30px;
+    border: #ccc solid 0;
+    border-radius: 15px;
+    content: '';
+}
+
+.discount-chart__legend:before {
+    left: 0;
+    border-top-width: 1px;
+}
+
+.discount-chart__legend:after {
+    right: 0;
+    border-top-width: 1px;
+}
+
+.discount-chart__chart {
+    display: flex;
+    height: 90px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    align-items: stretch;
+}
+
+.discount-chart__discount {
+    display: flex;
+    padding-right: 45px;
+    padding-left: 45px;
+    border: #24b987 solid 2px;
+    border-right: 0;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    color: #333333;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-chart__discount span {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.discount-chart__cost {
+    display: flex;
+    margin-left: -45px;
+    width: 70%;
+    border-radius: 45px;
+    background: #308ce9;
+    background: linear-gradient(to bottom, #308ce9 0%, #24b987 100%);
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list {
+}
+
+.icon-list__text {
+    font-size: 18px;
+}
+
+.icon-list_horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.icon-list_horizontal .icon-list__icon {
+    margin: auto;
+    margin-bottom: 39px;
+}
+
+.icon-list_horizontal .icon-list__text {
+    text-align: center;
+}
+
+.icon-list_vertical {
+}
+
+.icon-list_vertical .icon-list__item {
+    display: flex;
+    align-items: center;
+}
+
+.icon-list_vertical .icon-list__icon {
+    margin-right: 34px;
+    flex-shrink: 0;
+}
+
+.icon-list_vertical .icon-list__item + .icon-list__item {
+    margin-top: 39px;
+}
+
+.icon {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.icon_type_magnifier {
+    width: 123px;
+    height: 120px;
+    background-image: url("i/icon_type_magnifier.png");
+}
+
+.icon_type_certificate {
+    width: 123px;
+    height: 120px;
+    background-image: url("i/icon_type_certificate.png");
+}
+
+.icon_type_like {
+    width: 123px;
+    height: 120px;
+    background-image: url("i/icon_type_like.png");
+}
+
+.icon_type_clock {
+    width: 123px;
+    height: 120px;
+    background-image: url("i/icon_type_clock.png");
+}
+
+.icon_type_house {
+    width: 123px;
+    height: 120px;
+    background-image: url("i/icon_type_house.png");
+}
+
+.icon_type_document {
+    width: 123px;
+    height: 120px;
+    background-image: url("i/icon_type_document.png");
+}
+
+.icon_type_circle {
+    width: 102px;
+    height: 102px;
+    background-image: url("i/how-it-wroks__icon.png");
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 102px;
+}
+
+.pseudo-btn {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 2px solid #24b987;
+    border-radius: 1.5em;
+    background: #24b987;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.pseudo-btn_transparent {
+    background-color: transparent;
+}
+
+.phone-number {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.phone-number__schedule {
+    display: block;
+    color: #666666;
+    font-size: 14px;
+}
