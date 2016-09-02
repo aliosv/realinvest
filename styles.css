@@ -216,7 +216,8 @@ a:hover {
 }
 
 .section_type_owners .icon-list {
-    width: 48%;
+    width: 47%;
+    margin-right: 2%;
 }
 
 .section_type_owners .icon-list__text {
@@ -224,7 +225,9 @@ a:hover {
 }
 
 .section_type_owners .form {
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
+    flex: 1;
 }
 
 .section_type_how-it-works {
