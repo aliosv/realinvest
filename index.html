@@ -3,6 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Realinvest</title>
+    <link rel="icon" type="image/png" sizes="114x114" href="i/favicon_114x114.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="i/favicon_72x72.png">
+    <link rel="icon" type="image/png" sizes="57x57" href="i/favicon_57x57.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="i/favicon_16x16.png">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -230,16 +234,16 @@
         $(function() {
             $('.scrollTo').each(function() {
                 var $this = $(this),
-                    targetIdSelector = $this.attr('href');
+                        targetIdSelector = $this.attr('href');
 
-                targetIdSelector && $this.click(function(e) {
+                targetIdSelector && $this.click(function() {
                     $(document.body).stop().animate({ scrollTop : $(targetIdSelector).offset().top }, 300);
                 });
             });
 
             $('.popup-opener').click(function() {
                 var $this = $(this),
-                    popupId = $this.data('popup');
+                        popupId = $this.data('popup');
 
                 if(popupId) {
                     popupId = '#' + popupId;
