@@ -170,6 +170,83 @@ a:hover {
             animation-iteration-count: infinite;
 }
 
+.section_type_realty {
+    background-color: #fafafa;
+}
+
+.section_type_realty .section__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 46px;
+}
+
+.section_type_realty .realty-card {
+    margin: 5px;
+}
+
+.realty-card {
+    background: #ffffff;
+    outline: 2px solid rgba(204, 204, 204, .3);
+    width: 292px;
+    position: relative;
+}
+
+.realty-card__image {
+    width: 100%;
+    display: block;
+}
+
+.realty-card__info {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.realty-card__cost {
+    padding: 8px 86px 8px 20px;
+    position: relative;
+}
+
+.realty-card__price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.realty-card__price_old {
+    font-size: 22px;
+    color: #cc6666;
+    text-decoration: line-through;
+}
+
+.realty-card__discount {
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    color: #ffffff;
+    width: 68px;
+    height: 43px;
+    padding: 25px 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background: url("i/realty-card__discount.png") 50% 50% no-repeat;
+}
+
+.realty-card__discount:before {
+    content: 'Стоимость';
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    font-weight: normal;
+    width: 100%;
+    top: 15px;
+}
+
 .section_type_investment {
     background-color: #fff;
 }
