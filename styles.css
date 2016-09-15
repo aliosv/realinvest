@@ -176,7 +176,7 @@ a:hover {
 
 .section_type_realty .section__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 46px;
 }
@@ -187,9 +187,10 @@ a:hover {
 
 .realty-card {
     background: #ffffff;
-    outline: 2px solid rgba(204, 204, 204, .3);
+    border: 2px solid rgba(204, 204, 204, .3);
     width: 292px;
     position: relative;
+    border-radius: 3px;
 }
 
 .realty-card__image {
@@ -202,16 +203,20 @@ a:hover {
     color: #ffffff;
     font-size: 14px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 11px;
+    left: 14px;
 }
 
 .realty-card__cost {
-    padding: 8px 86px 8px 20px;
+    line-height: 1;
+    overflow: hidden;
+    padding: 15px 9px 9px 20px;
     position: relative;
 }
 
 .realty-card__price {
+    float: left;
+    white-space: nowrap;
     font-size: 32px;
     font-weight: bold;
     color: #333333;
@@ -224,13 +229,13 @@ a:hover {
 }
 
 .realty-card__discount {
-    position: absolute;
-    right: 9px;
-    top: 8px;
+    margin: -7px 0 0 9px;
+    float: right;
+    position: relative;
     color: #ffffff;
     width: 68px;
-    height: 43px;
-    padding: 25px 0 0;
+    height: 40px;
+    padding: 28px 0 0;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -244,7 +249,7 @@ a:hover {
     font-size: 10px;
     font-weight: normal;
     width: 100%;
-    top: 15px;
+    top: 18px;
 }
 
 .section_type_investment {
