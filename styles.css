@@ -62,9 +62,12 @@ a:hover {
 }
 
 .section_type_intro .head a {
-    margin-right: 35px;
     color: #ffffff;
     font-size: 16px;
+}
+
+.section_type_intro .head a + a {
+    margin-left: 35px;
 }
 
 .section_type_intro .logo {
@@ -72,10 +75,9 @@ a:hover {
     text-align: center;
     font-weight: bold;
     font-size: 34px;
-    flex: 0 !important;
 }
 
-.section_type_intro .phone-number {
+.section_type_intro .contacts {
     text-align: right;
 }
 
